@@ -63,7 +63,8 @@ public class MenuController {
 		int price = Integer.parseInt(parameter.get("price"));
 		int categoryCode = Integer.parseInt(parameter.get("categoryCode"));
 		
-		MenuDTO menu = new MenuDTO();
+		MenuDTO menu = menuService.modifyMenu(code);
+		
 		menu.setCode(code);
 		menu.setName(name);
 		menu.setPrice(price);

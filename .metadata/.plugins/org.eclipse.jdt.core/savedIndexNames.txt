@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+C:\Users\tjoeun\Documents\04_My_Batis_chap03_crude\.metadata\.plugins\org.eclipse.jdt.core

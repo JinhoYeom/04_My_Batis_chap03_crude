@@ -63,7 +63,7 @@ public class Application {
 		
 		return parameter;
 	}
-	
+	 
 	private static Map<String, String> inputModifyMenu() {
 		
 		Scanner sc = new Scanner(System.in);

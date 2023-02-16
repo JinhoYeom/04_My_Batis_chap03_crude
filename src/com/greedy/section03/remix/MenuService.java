@@ -51,5 +51,23 @@ public class MenuService {
 		
 		return result > 0? true: false;
 	}
+	
+	public MenuDTO modifyMenu(int code) {
+		
+	    SqlSession sqlSession = getSqlSession();
+	    
+	    MenuMapper menuMapper = sqlSession.getMapper(MenuMapper.class);
+	    MenuDTO menu = menuMapper.modifyMenu(code);
+	    
+	    if (menu != null) {
+	        sqlSession.commit();
+	    } else {
+	        sqlSession.rollback();
+	    }
+	    
+	    sqlSession.close();
+	    
+	    return menu;
+	}
 
 }
